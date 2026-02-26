@@ -1,0 +1,119 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-sticky-top-navigation-bar-with-the-brainscribe-solutions-llp-logo-brand-name-and-smooth-scroll-links-to-all-page-sections-hero-services-about-us-contact",
+      "featureTitle": "Implement a sticky top navigation bar with the Brainscribe Solutions LLP logo/brand name and smooth-scroll links to all page sections (Hero, Services, About Us, Contact).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-hero-section-with-a-full-width-banner-a-bold-headline-e-g-empowering-businesses-through-technology-a-supporting-subheadline-describing-brainscribe-solutions-llp-s-value-proposition-and-a-prominent-call-to-action-button-linking-to-the-contact-section",
+      "featureTitle": "Create a Hero section with a full-width banner, a bold headline (e.g., 'Empowering Businesses Through Technology'), a supporting subheadline describing Brainscribe Solutions LLP's value proposition, and a prominent call-to-action button linking to the Contact section.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-services-section-that-presents-six-distinct-service-cards-microsoft-technologies-moodle-lms-staffing-xdt-azure-aws-hosting-and-elearning-design-each-card-should-include-a-relevant-icon-a-service-title-and-a-brief-description",
+      "featureTitle": "Create a Services section that presents six distinct service cards: Microsoft Technologies, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, and eLearning Design. Each card should include a relevant icon, a service title, and a brief description.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ServicesSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-about-us-section-describing-brainscribe-solutions-llp-its-mission-expertise-and-commitment-to-client-success-include-professional-company-copy",
+      "featureTitle": "Create an About Us section describing Brainscribe Solutions LLP — its mission, expertise, and commitment to client success. Include professional company copy.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AboutSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-contact-section-with-a-contact-form-containing-fields-for-name-email-subject-and-message-plus-a-submit-button-on-submission-display-a-success-confirmation-message-to-the-user-store-submitted-messages-in-the-backend",
+      "featureTitle": "Create a Contact section with a contact form containing fields for Name, Email, Subject, and Message, plus a Submit button. On submission, display a success confirmation message to the user. Store submitted messages in the backend.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ContactSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-consistent-professional-light-blue-and-white-visual-theme-across-the-entire-site-use-light-blue-as-the-primary-brand-color-for-the-navbar-hero-background-section-accents-and-cta-buttons-use-white-as-the-primary-background-color-for-content-sections-typography-should-be-clean-and-modern-with-appropriate-heading-hierarchy",
+      "featureTitle": "Apply a consistent professional light blue and white visual theme across the entire site. Use light blue as the primary brand color for the navbar, hero background, section accents, and CTA buttons. Use white as the primary background color for content sections. Typography should be clean and modern with appropriate heading hierarchy.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

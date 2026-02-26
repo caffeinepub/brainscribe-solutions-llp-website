@@ -1,0 +1,135 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Brainscribe Solutions LLP Corporate Website - Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Implement sticky navigation bar with Brainscribe Solutions LLP branding and smooth-scroll links to all sections",
+      "acceptanceCriteria": [
+        "Navigation bar is visible and sticky at the top of the page on scroll.",
+        "Clicking each nav link smoothly scrolls to the corresponding section.",
+        "Brand name 'Brainscribe Solutions LLP' is prominently displayed in the nav."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "create",
+          "description": "Create sticky navigation component with Brainscribe Solutions LLP branding, logo image reference (frontend/public/assets/generated/brainscribe-logo.dim_256x256.png), and smooth-scroll anchor links to Hero, Services, About Us, and Contact sections. Style with light blue primary color matching the theme."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Navigation component into the app layout, rendering it at the top of the page before all content sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create Hero section with full-width banner, bold headline, subheadline, and CTA button linking to Contact",
+      "acceptanceCriteria": [
+        "Hero section spans full viewport width with a visually impactful layout.",
+        "Headline and subheadline are clearly readable.",
+        "CTA button scrolls the user to the Contact section when clicked."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create full-width Hero section component with the generated hero banner image (frontend/public/assets/generated/hero-banner.dim_1440x600.png) as background. Include bold headline 'Empowering Businesses Through Technology', supporting subheadline describing Brainscribe Solutions LLP's value proposition, and a prominent CTA button that smooth-scrolls to the Contact section. Apply light blue and white theme styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the HeroSection component into the app layout immediately after Navigation, with an id='hero' for anchor navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create Services section with six service cards (Microsoft Technologies, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, eLearning Design)",
+      "acceptanceCriteria": [
+        "All six services are displayed as individual cards in a responsive grid.",
+        "Each card contains an icon, title, and 2–3 sentence description.",
+        "Cards are visually consistent with the overall theme."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ServicesSection.tsx",
+          "operation": "create",
+          "description": "Create Services section component displaying six service cards in a responsive grid. Each card includes an appropriate icon (using lucide-react or similar), service title, and 2–3 sentence description. Services: Microsoft Technologies, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, and eLearning Design. Style cards with light blue accents and white backgrounds."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the ServicesSection component into the app layout after HeroSection, with an id='services' for anchor navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create About Us section with company mission, expertise, and commitment content",
+      "acceptanceCriteria": [
+        "About Us section contains at least one paragraph of company description.",
+        "Section is visually distinct and well-structured.",
+        "Content reflects a professional corporate tone."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "create",
+          "description": "Create About Us section component with professional company copy describing Brainscribe Solutions LLP's mission, expertise, and commitment to client success. Include at least one well-structured paragraph with appropriate heading hierarchy. Style with light blue section accents and white background."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the AboutSection component into the app layout after ServicesSection, with an id='about' for anchor navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create Contact section with form (Name, Email, Subject, Message) that submits to backend and displays success confirmation",
+      "acceptanceCriteria": [
+        "Contact form renders with Name, Email, Subject, and Message fields.",
+        "Form validates required fields before submission.",
+        "Successful submission shows a confirmation message.",
+        "Submitted contact data is persisted in the Motoko backend."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "create",
+          "description": "Create Contact section component with a contact form containing Name, Email, Subject, and Message fields, plus a Submit button. Validate required fields before submission. On submit, call the backend submitMessage method (available via backend.d.ts interface). Display a success confirmation message after successful submission. Style form with light blue accent colors and white background."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the ContactSection component into the app layout after AboutSection, with an id='contact' for anchor navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Apply consistent professional light blue and white theme with clean typography across the entire site",
+      "acceptanceCriteria": [
+        "Primary color scheme is light blue and white.",
+        "Navbar, hero, and CTA elements use the primary light blue color.",
+        "Content sections use white or light gray backgrounds.",
+        "Typography is consistent and professional throughout all sections."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define global light blue and white color palette as CSS custom properties. Set light blue as the primary brand color for interactive elements. Establish clean, modern typography with appropriate heading hierarchy. Apply professional spacing and layout defaults."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure Tailwind theme to use light blue as the primary color. Extend color palette with light blue variants for hover states and accents. Ensure white and light gray are available for backgrounds. Set up typography scale for consistent heading and body text styling."
+        }
+      ]
+    }
+  ]
+}

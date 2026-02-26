@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Motoko actor that defines a Message type and exposes a `submitMessage` function to store contact form submissions in an in-memory list.",
+  "feature_evidence.json": "Feature evidence report mapping each product feature (navigation, hero, services, about, contact) to the source files and test IDs that implement them.",
+  "frontend-file-summaries.txt": "JSON document containing one-line descriptions of each frontend source file, serving as a quick reference for the project's component and hook structure.",
+  "frontend/index.css": "Tailwind base stylesheet defining OKLCH CSS custom properties for light and dark theme design tokens (colors, radius, sidebar, charts).",
+  "frontend/index.html": "Minimal HTML entry point for the Brainscribe Solutions LLP React app, mounting the app into a `#root` div and loading `main.tsx`.",
+  "frontend/src/App.tsx": "Root React component that composes Navigation, HeroSection, ServicesSection, AboutSection, ContactSection, and Footer into a single-page layout.",
+  "frontend/src/components/AboutSection.tsx": "Two-column About Us section displaying company description, six capability highlights, and three mission/expertise/commitment pillar cards with icons.",
+  "frontend/src/components/ContactSection.tsx": "Contact section with a company info sidebar and a validated four-field form (Name, Email, Subject, Message) that submits to the backend and shows a success state.",
+  "frontend/src/components/Footer.tsx": "Full-width dark footer with brand logo, quick-links and services columns, copyright notice, and a caffeine.ai attribution link with UTM tracking.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section for Brainscribe Solutions with a background image, headline, CTA buttons to scroll to contact/services, and a stats row showing key metrics.",
+  "frontend/src/components/Navigation.tsx": "Fixed top navigation bar with scroll-aware styling, smooth-scroll nav links, and a responsive mobile menu toggle.",
+  "frontend/src/components/ServicesSection.tsx": "Displays Brainscribe's six core services (Microsoft, Moodle, Staffing, XDT, Cloud, eLearning) in a responsive card grid with color-coded tags.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and caches an ICP backend actor (authenticated or anonymous) using React Query, and invalidates dependent queries when the identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and provider, exposing login/logout functions, identity state, and login status via a React context and custom hook.",
+  "frontend/src/hooks/useQueries.ts": "Exports a `useSubmitMessage` mutation hook that sends contact form data to the ICP backend actor.",
+  "frontend/src/index.css": "Global CSS file that imports Google Fonts, sets up Tailwind layers, and defines light/dark CSS custom properties for the brand color palette.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app wrapped with React Query and InternetIdentityProvider providers.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration for the frontend, defining dark mode, content paths, custom fonts (Inter, Poppins), OKLCH-based color tokens, border radius, box shadows, keyframe animations, and plugins (typography, container-queries, animate).",
+  "project_state.json": "Project state descriptor for the Brainscribe Solutions LLP corporate single-page website, documenting version, architectural notes, existing features (navbar, hero, services, about, contact, theming), image requirements, and known issues."
+}

@@ -1,0 +1,138 @@
+{
+  "kind": "build_request",
+  "title": "Brainscribe Solutions LLP Corporate Website",
+  "projectName": "Brainscribe Solutions",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a sticky top navigation bar with the Brainscribe Solutions LLP logo/brand name and smooth-scroll links to all page sections (Hero, Services, About Us, Contact).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "full corporate website",
+          "smooth navigation"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation bar is visible and sticky at the top of the page on scroll.",
+        "Clicking each nav link smoothly scrolls to the corresponding section.",
+        "Brand name 'Brainscribe Solutions LLP' is prominently displayed in the nav."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a Hero section with a full-width banner, a bold headline (e.g., 'Empowering Businesses Through Technology'), a supporting subheadline describing Brainscribe Solutions LLP's value proposition, and a prominent call-to-action button linking to the Contact section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "hero section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section spans full viewport width with a visually impactful layout.",
+        "Headline and subheadline are clearly readable.",
+        "CTA button scrolls the user to the Contact section when clicked."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a Services section that presents six distinct service cards: Microsoft Technologies, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, and eLearning Design. Each card should include a relevant icon, a service title, and a brief description.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "detailed services breakdown (Microsoft Technologies, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, and eLearning Design)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All six services are displayed as individual cards in a responsive grid.",
+        "Each card contains an icon, title, and 2–3 sentence description.",
+        "Cards are visually consistent with the overall theme."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create an About Us section describing Brainscribe Solutions LLP — its mission, expertise, and commitment to client success. Include professional company copy.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "an About Us section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About Us section contains at least one paragraph of company description.",
+        "Section is visually distinct and well-structured.",
+        "Content reflects a professional corporate tone."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a Contact section with a contact form containing fields for Name, Email, Subject, and Message, plus a Submit button. On submission, display a success confirmation message to the user. Store submitted messages in the backend.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "a contact form"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form renders with Name, Email, Subject, and Message fields.",
+        "Form validates required fields before submission.",
+        "Successful submission shows a confirmation message.",
+        "Submitted contact data is persisted in the Motoko backend."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Apply a consistent professional light blue and white visual theme across the entire site. Use light blue as the primary brand color for the navbar, hero background, section accents, and CTA buttons. Use white as the primary background color for content sections. Typography should be clean and modern with appropriate heading hierarchy.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "professional light blue and white theme"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary color scheme is light blue and white.",
+        "Navbar, hero, and CTA elements use the primary light blue color.",
+        "Content sections use white or light gray backgrounds.",
+        "Typography is consistent and professional throughout all sections."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use light blue and white as the primary color palette.",
+    "All content sections must be on a single scrollable page with smooth anchor navigation.",
+    "All Motoko logic must remain in a single actor in backend/main.mo."
+  ],
+  "nonGoals": [
+    "Multi-page routing or separate page URLs for each section.",
+    "User authentication or login functionality.",
+    "E-commerce or payment processing.",
+    "Blog or CMS functionality.",
+    "Real-time chat or messaging features."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Professional corporate hero banner with abstract light blue geometric shapes and subtle tech-inspired patterns on a white-to-light-blue gradient background (hero-banner.dim_1440x600.png)",
+      "Brainscribe Solutions LLP logo mark — a clean modern icon combining a brain silhouette with a circuit/network motif in light blue on white (brainscribe-logo.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}
